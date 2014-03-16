@@ -13,15 +13,15 @@ $dark-yellow:  darken(#d1cc80, 30%);
 $white:        #d1dffe;
 
 body {
-  background: black image-url("bg-grid.png") repeat-y center -1px;
-  color: $white;
+  // background: black image-url("bg-grid.png") repeat-y center -1px;
+  // color: $white;
 }
 
 @import "compass";
 @import "susy";
 
 @import "normalize";
-@include normalize;
+// @include normalize;
 @include establish-baseline;
 
 @import "layout";

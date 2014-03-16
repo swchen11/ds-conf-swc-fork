@@ -18,10 +18,10 @@ $container-width: false;
 }
 
 // debug
-@import "debug";
+// @import "debug";
 
-// $anchor variable to control how many columns of 
-// the main section remain visible while side-sections are 
+// $anchor variable to control how many columns of
+// the main section remain visible while side-sections are
 // displayed.
 $anchor : 2;
 $side   : $total-columns - $anchor;
@@ -37,10 +37,10 @@ $side   : $total-columns - $anchor;
 }
 
 .main-content {
-  background: image-url("bg-map.gif") no-repeat center top;
+  // background: image-url("bg-map.gif") no-repeat center top;
   min-height: 600px;
-  @include transition(margin .3s);
-  @include span-columns($total-columns omega);  
+  // @include transition(margin .3s);
+  @include span-columns($total-columns omega);
   margin-right: 0;
   .show-menu & { margin-right: - ceil(space($side)); }
 }
@@ -91,8 +91,8 @@ $side   : $total-columns - $anchor;
 
 // this year
 .topic {
-  background: rgba(black,.75);
-  border: 3px double $blue;
+  // background: rgba(black,.75);
+  // border: 3px double $blue;
   margin: -3px auto ($base-line-height - 3px);
   overflow: hidden;
   br {
@@ -185,14 +185,14 @@ $side   : $total-columns - $anchor;
 }
 
 %col2 {
-  background: rgba(black,.7);
+  // background: rgba(black,.7);
 
   ol {
     margin: 0 1.3em;
   }
   .title {
     text-align: center;
-    
+
   }
   .btn {
     display: block;
@@ -200,17 +200,17 @@ $side   : $total-columns - $anchor;
     margin: 0 auto $base-line-height;
   }
   .content {
-    
+
     @include padding-trailer(1);
     .title-wrapper {
-      border-bottom: 1px solid darken($blue, 10%);
+      // border-bottom: 1px solid darken($blue, 10%);
       margin-bottom: $base-line-height - 1px + $base-line-height / 2;
       .title {
         margin-bottom: - $base-line-height / 2;
         .span {
           padding: 0 $base-line-height / 2;
           display: inline;
-          background: black;
+          // background: black;
         }
       }
     }
@@ -227,7 +227,7 @@ $side   : $total-columns - $anchor;
     list-style: square;
     ul {
       @include adjust-font-size-to(.9em, .7);
-      opacity: .7;
+      // opacity: .7;
     }
   }
   ol {
@@ -240,7 +240,7 @@ $side   : $total-columns - $anchor;
   @include at-breakpoint($desktop) {
     @include reset-columns;
     @include push(0);
-    background: rgba(black,.3);
+    // background: rgba(black,.3);
     .content {
       @include span-columns(6);
       @include nth-omega();
@@ -260,7 +260,7 @@ $side   : $total-columns - $anchor;
 }
 
 .sponsor {
-  background: rgba(black,.7);
+  // background: rgba(black,.7);
   padding: 3em;
 }
 
@@ -277,7 +277,7 @@ $side   : $total-columns - $anchor;
 }
 
 .waiting {
-  background: image-url("noise.gif") center top;
+  // background: image-url("noise.gif") center top;
   min-height: 250px;
   .title {
     @include leader(2);

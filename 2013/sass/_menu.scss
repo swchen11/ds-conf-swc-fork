@@ -3,26 +3,26 @@
     padding: 0 $base-line-height / 2;
     font-size: 12px;
     line-height: $base-line-height * 2 - 1px;
-    border-bottom: 1px solid $yellow;
+    // border-bottom: 1px solid $yellow;
     position: relative;
     z-index: 99;
-    color: $red;
+    // color: $red;
   }
   .menu-item {
     list-style: none;
-    border-bottom: 1px solid $blue;
+    // border-bottom: 1px solid $blue;
     a {
       display: block;
       padding: 0 $base-line-height / 2;
       line-height: $base-line-height * 2 - 1px;
-      @include transition(background-color .3s .3s);
+      // @include transition(background-color .3s .3s);
       @include unstyled-link;
-      @include link-colors($white);
+      // @include link-colors($white);
       &:active {
-        color: $yellow;
-        background: rgba($white,.1);
-        border: 1px solid $white;
-        border-width: 1px 0;
+        // color: $yellow;
+        // background: rgba($white,.1);
+        // border: 1px solid $white;
+        // border-width: 1px 0;
         margin: -1px 0;
         position: relative;
         z-index: 100;
@@ -46,7 +46,7 @@
       text-align: center;
       position: relative;
       top: - $base-line-height / 2;
-      @include transition(border-color .3s .3s);
+      // @include transition(border-color .3s .3s);
       &:hover {
         border-color: $white;
       }
@@ -56,13 +56,13 @@
         display: inline;
         font-size: 15px;
         line-height: $base-line-height - 1px;
-        background: black;
-        @include link-colors($red);
-        @include transition( background-color .3s );
+        // background: black;
+        // @include link-colors($red);
+        // @include transition( background-color .3s );
         &:hover {
-          background: black;
-          color: $yellow;
-          text-shadow: 0 0 5px rgba($yellow, 1);
+          // background: black;
+          // color: $yellow;
+          // text-shadow: 0 0 5px rgba($yellow, 1);
           border: none;
         }
       }

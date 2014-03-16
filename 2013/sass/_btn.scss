@@ -3,11 +3,11 @@
   position: relative;
   display: inline-block;
   line-height: $base-line-height * 2 - 4px;
-  border: 1px solid $blue;
+  // border: 1px solid $blue;
   padding: 0 $base-line-height / 2;
   margin: 0 auto;
-  @include link-colors($yellow, $white);
-  &:before, 
+  // @include link-colors($yellow, $white);
+  &:before,
   &:after {
     content: "";
     display: block;
@@ -15,15 +15,15 @@
     margin: 0 auto;
     position: relative;
     top: -1px;
-    border-top: 1px solid $dark-blue;
+    // border-top: 1px solid $dark-blue;
   }
   &:after {
     top: 1px;
   }
   &:hover {
     text-decoration: none;
-    border-color: $red;
-    text-shadow: 0 0 5px $yellow;
-    background: rgba($white, .1);
+    // border-color: $red;
+    // text-shadow: 0 0 5px $yellow;
+    // background: rgba($white, .1);
   }
 }
