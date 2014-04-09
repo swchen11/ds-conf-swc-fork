@@ -2213,6 +2213,8 @@ hr {
     background: rgba(0, 0, 0, 0.7);
   }
   .hero hgroup {
+    line-height: 32px;
+    text-align: center;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -2236,6 +2238,8 @@ hr {
     display: none;
   }
   .hero-page hgroup {
+    line-height: 32px;
+    text-align: center;
     overflow: hidden;
     margin: 0 auto;
   }
@@ -2299,7 +2303,6 @@ hr {
 
 .session-box {
   -webkit-font-smoothing: subpixel-antialiased;
-  text-shadow: 0 2px 2px black;
   margin: 0 20px;
   margin-top: 50px;
   margin-bottom: 50px;

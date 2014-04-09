@@ -8,7 +8,7 @@
 
 .session-box {
   -webkit-font-smoothing: subpixel-antialiased;
-  text-shadow: 0 2px 2px black;
+  // text-shadow: 0 2px 2px black;
   margin: 0 20px;
   @include leader(2);
   @include trailer(2);
