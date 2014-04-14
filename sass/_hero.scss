@@ -2,6 +2,8 @@
   display: none;
   @include at-breakpoint($desktop) {
     display: block;
+    @include leader(2);
+    @include trailer(1.5);
     // height: 600px;
     // background: image-url("hero.png") no-repeat center top;
     .slogan {
@@ -17,7 +19,7 @@
       }
     }
     hgroup {
-      line-height: 32px;
+      line-height: 36px;
       text-align: center;
       .title {
         // background: black;
@@ -39,8 +41,10 @@
   }
   @include at-breakpoint($desktop) {
     display: block;
+    @include leader(3);
+    @include trailer(2);
     // height: 200px - 1px;
-    padding-top: 51px;
+    // padding-top: 51px;
     // background: image-url("hero.png") no-repeat center bottom;
     .slogan {
       display: none;
@@ -52,7 +56,7 @@
       }
     }
     hgroup {
-      line-height: 32px;
+      line-height: 36px;
       text-align: center;
       .title {
         // background: black;

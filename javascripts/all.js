@@ -41,8 +41,33 @@ $(function() {
   });
 });
 
+// google map API
+function buildMap(lat, lng, id, popcontent) {
+    var myLatlng = new google.maps.LatLng(lat, lng);
+    var mapOptions = {
+        zoom: 15,
+        center: myLatlng,
+        scrollwheel: false,
+        streetViewControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById(id), mapOptions);
 
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'marker'
+    });
 
+    var infowindow = new google.maps.InfoWindow({
+      content: popcontent
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', buildMap(25.0422145,121.6141917, "google-map", "中央研究院"));
 
 
 

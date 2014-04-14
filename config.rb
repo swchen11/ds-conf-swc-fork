@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "2013/stylesheets"
-sass_dir = "2013/sass"
-images_dir = "2013/images"
-javascripts_dir = "2013/javascripts"
+css_dir = "stylesheets"
+sass_dir = "sass"
+images_dir = "images"
+javascripts_dir = "javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -25,4 +25,13 @@ line_comments = false
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-output_style = :expanded # by Fire.app 
+output_style = :expanded # by Fire.app
+
+the_hold_options = {
+  :login => "evenwu", # 你的帳號
+  :token => "229f2b40d4f17f98f142318250a75f20", # 你的密碼
+  :project => "ds-conf", # 專案名稱, 會變成 http://your-project-name.evenwu.the-hold.handlino.com/
+  # :project_site_password => "123456", # 密碼，這一行拿掉的話就沒有密碼
+  :host => "http://the-hold.handlino.com/",
+  :cname => "ds-conf.evendesign.tw"
+}

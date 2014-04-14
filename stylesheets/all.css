@@ -382,7 +382,7 @@ table {
 
 html {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
 }
 
 .page {
@@ -509,7 +509,7 @@ html {
 }
 
 .topic {
-  margin: -3px auto 22px;
+  margin: -3px auto 21px;
   overflow: hidden;
   width: 80%;
 }
@@ -520,7 +520,7 @@ html {
   text-align: center;
 }
 .topic hr {
-  margin-bottom: 49px;
+  margin-bottom: 47px;
 }
 @media (min-width: 720px) {
   .topic {
@@ -545,8 +545,8 @@ html {
     float: left;
     margin-right: 1.20482%;
     margin-left: 16.86747%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 .topic .date {
@@ -554,11 +554,11 @@ html {
   margin: 0;
   padding: 0;
   font-size: 22px;
-  line-height: 37px;
+  line-height: 36px;
 }
 .topic .date.en {
   font-size: 22px;
-  line-height: 37px;
+  line-height: 36px;
 }
 @media (min-width: 720px) {
   .topic .date {
@@ -569,14 +569,14 @@ html {
 .topic .address {
   text-align: left;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
 }
 .topic .stage.en,
 .topic .address.en {
   font-size: 13px;
-  line-height: 25px;
+  line-height: 24px;
 }
 @media (min-width: 720px) {
   .topic .stage,
@@ -585,11 +585,11 @@ html {
   }
 }
 .topic .address {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .whats-hitcon {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 .whats-hitcon .title {
   text-align: center;
@@ -620,7 +620,7 @@ html {
     -ms-column-gap: 25px;
     -o-column-gap: 25px;
     column-gap: 25px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
   }
   .whats-hitcon .content:last-child {
     margin-bottom: 0px;
@@ -643,19 +643,19 @@ html {
 .registration .btn, .wargame .btn, .location .btn, .agenda .btn {
   display: block;
   width: 150px;
-  margin: 0 auto 25px;
+  margin: 0 auto 24px;
 }
 .registration .content, .wargame .content, .location .content, .agenda .content {
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 .registration .content .title-wrapper, .wargame .content .title-wrapper, .location .content .title-wrapper, .agenda .content .title-wrapper {
-  margin-bottom: 36.5px;
+  margin-bottom: 35px;
 }
 .registration .content .title-wrapper .title, .wargame .content .title-wrapper .title, .location .content .title-wrapper .title, .agenda .content .title-wrapper .title {
-  margin-bottom: -12.5px;
+  margin-bottom: -12px;
 }
 .registration .content .title-wrapper .title .span, .wargame .content .title-wrapper .title .span, .location .content .title-wrapper .title .span, .agenda .content .title-wrapper .title .span {
-  padding: 0 12.5px;
+  padding: 0 12px;
   display: inline;
 }
 @media (min-width: 960px) {
@@ -663,7 +663,7 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 12.5px;
+    padding: 0 12px;
   }
 }
 .registration ul, .wargame ul, .location ul, .agenda ul, .registration ol, .wargame ol, .location ol, .agenda ol {
@@ -677,7 +677,7 @@ html {
 }
 .registration ul ul, .wargame ul ul, .location ul ul, .agenda ul ul, .registration ol ul, .wargame ol ul, .location ol ul, .agenda ol ul {
   font-size: 0.9em;
-  line-height: 17px;
+  line-height: 16px;
 }
 .registration ol, .wargame ol, .location ol, .agenda ol {
   list-style: decimal;
@@ -708,8 +708,18 @@ html {
   }
   .registration .content.en, .wargame .content.en, .location .content.en, .agenda .content.en {
     font-size: 13px;
-    line-height: 25px;
+    line-height: 24px;
   }
+}
+
+.registration .content {
+  float: none;
+  max-width: 45em;
+  margin: 0 auto;
+}
+.registration .content:last-child {
+  float: none;
+  margin-right: auto;
 }
 
 .sponsor {
@@ -726,14 +736,14 @@ html {
   min-height: 250px;
 }
 .waiting .title {
-  margin-top: 50px;
+  margin-top: 48px;
   font-size: 32px;
-  line-height: 50px;
+  line-height: 48px;
   text-align: center;
 }
 .waiting p {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -774,16 +784,16 @@ hr {
   border: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   border-color: #2f4768;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .section {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 25px;
+  padding: 24px;
 }
 .section:after {
   content: "";
@@ -792,28 +802,28 @@ hr {
 }
 .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
   font-size: 24px;
-  line-height: 25px;
-  margin-bottom: 25px;
+  line-height: 24px;
+  margin-bottom: 24px;
   text-align: center;
 }
 .section h3 {
   font-size: 20px;
-  line-height: 25px;
+  line-height: 24px;
   text-align: left;
 }
 .section h4, .section h5 {
   font-size: 13px;
-  line-height: 25px;
+  line-height: 24px;
   text-align: left;
   font-weight: bold;
   margin: 0;
 }
 .section p {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .section ul,
 .section ol {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .row {
@@ -943,7 +953,7 @@ hr {
 
 .sponsor-group {
   clear: both;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .sponsor-group:after {
   content: "";
@@ -2026,8 +2036,8 @@ hr {
   text-align: center;
   position: relative;
   display: inline-block;
-  line-height: 46px;
-  padding: 0 12.5px;
+  line-height: 44px;
+  padding: 0 12px;
   margin: 0 auto;
 }
 .btn:before, .btn:after {
@@ -2046,9 +2056,9 @@ hr {
 }
 
 .main-menu .title {
-  padding: 0 12.5px;
+  padding: 0 12px;
   font-size: 12px;
-  line-height: 49px;
+  line-height: 47px;
   position: relative;
   z-index: 99;
 }
@@ -2057,8 +2067,8 @@ hr {
 }
 .main-menu .menu-item a {
   display: block;
-  padding: 0 12.5px;
-  line-height: 49px;
+  padding: 0 12px;
+  line-height: 47px;
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
@@ -2073,8 +2083,8 @@ hr {
 }
 @media (min-width: 960px) {
   .main-menu {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
   .main-menu .title {
     display: none;
@@ -2085,13 +2095,13 @@ hr {
     clear: both;
   }
   .main-menu .menu-item {
-    width: 15.66265%;
+    width: 18.84058%;
     float: left;
-    margin-right: 1.20482%;
-    line-height: 24px;
+    margin-right: 1.44928%;
+    line-height: 23px;
     text-align: center;
     position: relative;
-    top: -12.5px;
+    top: -12px;
   }
   .main-menu .menu-item:last-child {
     float: right;
@@ -2102,10 +2112,10 @@ hr {
   }
   .main-menu .menu-item a {
     position: relative;
-    top: 12.5px;
+    top: 12px;
     display: inline;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 23px;
   }
   .main-menu .menu-item a:hover {
     border: none;
@@ -2117,13 +2127,13 @@ hr {
 
 .header {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 .header .title {
   font-size: 24px;
-  line-height: 50px;
+  line-height: 48px;
   text-align: center;
-  height: 49px;
+  height: 47px;
   overflow: hidden;
 }
 .header .title a {
@@ -2136,8 +2146,8 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 49px;
+  width: 48px;
+  height: 47px;
 }
 .header .menu-button .line {
   -webkit-transition: -webkit-transform 0.3s;
@@ -2201,6 +2211,8 @@ hr {
 @media (min-width: 960px) {
   .hero {
     display: block;
+    margin-top: 48px;
+    margin-bottom: 36px;
   }
   .hero a {
     width: 100%;
@@ -2213,7 +2225,7 @@ hr {
     background: rgba(0, 0, 0, 0.7);
   }
   .hero hgroup {
-    line-height: 32px;
+    line-height: 36px;
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
@@ -2232,13 +2244,14 @@ hr {
 @media (min-width: 960px) {
   .hero-page {
     display: block;
-    padding-top: 51px;
+    margin-top: 72px;
+    margin-bottom: 48px;
   }
   .hero-page .slogan {
     display: none;
   }
   .hero-page hgroup {
-    line-height: 32px;
+    line-height: 36px;
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
@@ -2250,45 +2263,49 @@ hr {
 
 .footer {
   clear: both;
-  margin-top: 25px;
+  margin-top: 24px;
   text-align: center;
   border-top-style: solid;
   border-top-width: 1px;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-bottom: 50px;
 }
 .footer ul {
   list-style: none;
 }
 .footer .bottom-menu {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
-  -webkit-columns: 10em 3;
-  -moz-columns: 10em 3;
-  -ms-columns: 10em 3;
-  -o-columns: 10em 3;
-  columns: 10em 3;
-  -webkit-column-gap: 25px;
-  -moz-column-gap: 25px;
-  -ms-column-gap: 25px;
-  -o-column-gap: 25px;
-  column-gap: 25px;
 }
 @media (min-width: 960px) {
   .footer .bottom-menu {
-    width: 55%;
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .footer .bottom-menu {
+    -webkit-columns: 5em 5;
+    -moz-columns: 5em 5;
+    -ms-columns: 5em 5;
+    -o-columns: 5em 5;
+    columns: 5em 5;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    -ms-column-gap: 25px;
+    -o-column-gap: 25px;
+    column-gap: 25px;
   }
 }
 .footer .bottom-menu a {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .footer .credit a {
   font-size: 13px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .footer .slogan {
-  margin: 25px auto;
+  margin: 24px auto;
 }
 @media (min-width: 720px) {
   .footer .slogan {
@@ -2304,14 +2321,14 @@ hr {
 .session-box {
   -webkit-font-smoothing: subpixel-antialiased;
   margin: 0 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 @media (min-width: 30em) {
   .session-box {
     margin: 0 auto;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 72px;
+    margin-bottom: 72px;
     width: 25em;
   }
 }
@@ -2322,34 +2339,34 @@ hr {
 }
 .session-box .title {
   font-size: 24px;
-  line-height: 31px;
+  line-height: 30px;
   margin-bottom: 12px;
 }
 .session-box .speaker {
   text-align: center;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .session-box .country {
   text-align: center;
   font-size: 13px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .session-box .company {
   text-align: center;
   font-size: 13px;
-  line-height: 25px;
-  margin-bottom: 25px;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 .session-box .download {
   text-align: center;
-  margin-bottom: 25px;
-  margin-top: -12.5px;
+  margin-bottom: 24px;
+  margin-top: -12px;
 }
 .session-box .speaker-note {
   font-size: 13px;
   line-height: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .session-box .speaker-note:after {
   content: "";
@@ -2359,12 +2376,12 @@ hr {
 .session-box .speaker-note .zh:before {
   content: "講者簡介";
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .session-box .speaker-note .en:before {
   content: "Speaker";
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .session-box .session-note {
   font-size: 13px;
@@ -2378,12 +2395,12 @@ hr {
 .session-box .session-note .zh:before {
   content: "議程簡介";
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .session-box .session-note .en:before {
   content: "Session";
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 @media (min-width: 960px) {
   .session-box .zh {
@@ -2398,16 +2415,16 @@ hr {
   }
 }
 .session-box p {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .session-box h3, .session-box h4 {
   font-size: 13px;
-  line-height: 25px;
+  line-height: 24px;
 }
 .session-box ul, .session-box ol {
   list-style-type: square;
   margin-left: 1.3em;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 .session-box li {
   font-size: 12px;
@@ -2416,7 +2433,7 @@ hr {
 
 .room {
   font-size: 12px;
-  line-height: 17px;
+  line-height: 16px;
   display: inline-block;
   padding: 1px .7em 0;
   font-weight: bold;
@@ -2425,7 +2442,7 @@ hr {
 }
 
 .agenda-table {
-  margin-bottom: 75px;
+  margin-bottom: 72px;
 }
 @media (min-width: 720px) {
   .agenda-table {
@@ -2466,8 +2483,8 @@ hr {
   padding: 0;
   border: 0;
   font-size: 24px;
-  line-height: 25px;
-  margin-bottom: 25px;
+  line-height: 24px;
+  margin-bottom: 24px;
   text-align: center;
 }
 .date-block p small {
@@ -2476,7 +2493,7 @@ hr {
 
 .time-block {
   font-size: 12px;
-  line-height: 25px;
+  line-height: 24px;
   padding: 0 .5em;
   letter-spacing: 2px;
   font-weight: bold;
@@ -2534,7 +2551,7 @@ hr {
 }
 .session:before {
   font-size: 12px;
-  line-height: 17px;
+  line-height: 16px;
   display: inline-block;
   padding: 1px .7em 0;
   font-weight: bold;
@@ -2577,8 +2594,8 @@ hr {
   }
 }
 .session.long-time {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 @keyframes time-light {
@@ -2615,6 +2632,25 @@ hr {
     background: #ff9999;
     box-shadow: 0 0 7px 2px red;
   }
+}
+
+.location-map {
+  margin-bottom: 12px;
+}
+.location-map .map-wrap {
+  position: relative;
+  padding-top: 100%;
+}
+.location-map .map-wrap .google-map {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.location-map .map-wrap .google-map img {
+  max-width: none;
 }
 
 [class*="obj-"] {

@@ -1,4 +1,4 @@
-$total-columns    : 6;
+ $total-columns    : 6;
 $column-width     : 5em;
 $gutter-width     : 1em;
 $grid-padding     : 0;
@@ -253,6 +253,15 @@ $side   : $total-columns - $anchor;
 
 .registration {
   @extend %col2;
+  .content {
+    float: none;
+    max-width: 45em;
+    margin: 0 auto;
+    &:last-child {
+      float: none;
+      margin-right: auto;
+    }
+  }
 }
 
 .wargame {
