@@ -16,29 +16,30 @@
     = render "/kmt.erb"
 
   %body
-    = yield :hero
-    .page
-      %nav.main-menu
-        %h2.title Main Navigation
-        %ul
-          %li.menu-item= link_to( "Home", "/" )
-          %li.menu-item= link_to( "News", "/news/" )
-          %li.menu-item= link_to( "Agenda", "/agenda/" )
-          -# %li.menu-item= link_to( "Wargame", "/wargame/" )
-          %li.menu-item= link_to( "Location", "/location/" )
-          %li.menu-item= link_to( "Registration", "/registration/" )
-          %li.menu-item= link_to( "Sponsor", "/sponsor/" )
-      .main-content
-        .header
-          %a.menu-button
-            .line
-            .line
-            .line
-          %h1.title
-            = link_to "DS Conference", "/"
-        = yield
-        = render "/footer"
-    = render "/vender/jquery-cdn"
-    = render "/partials/site-js"
-    = render "/vender/facebook.erb"
-    = livereload_js unless ENV["RACK_ENV"] == "production"
+    .page-wrap
+      = yield :hero
+      .page
+        %nav.main-menu
+          %h2.title Main Navigation
+          %ul
+            %li.menu-item= link_to( "Home", "/" )
+            %li.menu-item= link_to( "News", "/news/" )
+            %li.menu-item= link_to( "Agenda", "/agenda/" )
+            -# %li.menu-item= link_to( "Wargame", "/wargame/" )
+            %li.menu-item= link_to( "Location", "/location/" )
+            %li.menu-item= link_to( "Registration", "/registration/" )
+            %li.menu-item= link_to( "Sponsor", "/sponsor/" )
+        .main-content
+          .header
+            %a.menu-button
+              .line
+              .line
+              .line
+            %h1.title
+              = link_to "DS Conference", "/"
+          = yield
+          = render "/footer"
+      = render "/vender/jquery-cdn"
+      = render "/partials/site-js"
+      = render "/vender/facebook.erb"
+      = livereload_js unless ENV["RACK_ENV"] == "production"
