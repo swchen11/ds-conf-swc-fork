@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  // @include link-colors($white, $green);
+  @include link-colors($blue, $lightblue);
   @include hover-link;
 }
 
