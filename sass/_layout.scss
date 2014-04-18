@@ -1,4 +1,4 @@
- $total-columns    : 6;
+$total-columns    : 6;
 $column-width     : 5em;
 $gutter-width     : 1em;
 $grid-padding     : 0;
@@ -18,7 +18,7 @@ $container-width: false;
 }
 
 // debug
-// @import "debug";
+@import "debug";
 
 // $anchor variable to control how many columns of
 // the main section remain visible while side-sections are
@@ -69,6 +69,7 @@ $side   : $total-columns - $anchor;
   $grid-padding: $gutter-width;
   .page {
     @include container;
+    max-width: 78em;
   }
   .main-menu {
     @include transition(none);
