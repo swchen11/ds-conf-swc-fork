@@ -17,6 +17,7 @@
       @include column-gap(25px);
     }
     margin: 0 auto;
+    @include trailer(1);
     a {
       // @include link-colors( darken($red, 10%) );
       @include adjust-font-size-to(16px);
