@@ -41,14 +41,14 @@
   }
   @include at-breakpoint($desktop) {
     display: block;
-    @include leader(3);
-    @include trailer(2);
+    @include padding-leader(3);
+    @include padding-trailer(2);
     // height: 200px - 1px;
     // padding-top: 51px;
     // background: image-url("hero.png") no-repeat center bottom;
-    .slogan {
-      display: none;
-    }
+    // .slogan {
+    //   display: none;
+    // }
     a {
       // @include transition(.3s);
       &:hover {
