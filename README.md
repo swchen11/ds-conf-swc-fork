@@ -1,4 +1,4 @@
-hitcon2013
+Data Science in Taiwan Conference 2014
 ==========
 
-hitcon 2013 official site
+Data Science in Taiwan Conference 2014 official site
