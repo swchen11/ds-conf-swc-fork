@@ -1,10 +1,9 @@
 - content_for :hero do
   = render "/hero-page"
 
-.section.news
-
-  %h2.title News / 新聞
-
-  .news-group
-    .row
-      %p.construction 工事中
+.row
+  .section
+    %h2.title 新聞
+    .content.zh-tw
+      %p.construction
+        = render "/data/news.md"
