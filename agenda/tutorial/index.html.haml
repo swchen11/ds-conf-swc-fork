@@ -1,0 +1,18 @@
+- content_for :hero do
+  = render "/hero-page"
+
+.section.agenda
+  %h2.title 資料分析上手課程
+  #day1
+  .date-block
+    %p
+      8/30 議程第一天
+      %small <a href="#day2">跳到第二天 day2 8/31 →</a>
+  .agenda-table
+    = render "/data/agenda/tutorial/day1.md"
+  #day2
+  .date-block
+    %p 8/31 議程第二天
+  .agenda-table
+    = render "/data/agenda/tutorial/day2.md"
+  -# .hidden-note= render "hidden-note"
