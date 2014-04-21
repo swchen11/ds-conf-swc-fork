@@ -1,0 +1,23 @@
+- content_for :hero do
+  = render "/hero-page"
+
+.section
+  %h2.title 會場資訊
+  .content.zh-tw
+    .title-wrapper
+      %h3.title
+        .span 地點
+    = render "/data/registration/location.md"
+
+
+
+
+  .content
+    .title-wrapper
+      %h3.title
+        .span 地圖
+    .location-map
+      .map-wrap
+        .google-map#google-map
+
+

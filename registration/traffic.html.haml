@@ -1,0 +1,9 @@
+- content_for :hero do
+  = render "/hero-page"
+
+.row
+  .section
+    %h2.title 交通資訊
+    .content.zh-tw
+      %p.construction
+        = render "/data/registration/traffic.md"

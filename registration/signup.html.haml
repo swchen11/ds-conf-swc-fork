@@ -1,0 +1,9 @@
+- content_for :hero do
+  = render "/hero-page"
+
+.row
+  .section
+    %h2.title 線上報名
+    .content.zh-tw
+      %p.construction
+        = render "/data/registration/signup.md"
