@@ -1,0 +1,28 @@
+- content_for :hero do
+  = render "/hero-page"
+
+.row.topic
+  .section
+    %h2.date 2014/8/30 (Sat) - 2014/8/31 (Sun)
+    %p.stage 中央研究院 人文社會科學館 國際會議廳
+    %p.address 台北市南港區研究院路二段128號
+    %h2.title 今年主軸
+    .content
+      %p.construction
+        = render "/data/index/main-topic.md"
+
+.row.topic
+  .section
+    %h2.title 關於 台灣資料科學愛好者年會
+    .content
+      %p.construction
+        = render "/data/index/main-topic.md"
+
+-# %hr
+
+-# .row.call-for-paper
+-#   .section
+-#     .content
+-#       %a.btn{ :href => "/agenda/" } Agenda / 議程表
+
+-# %hr

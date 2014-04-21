@@ -1,0 +1,9 @@
+- content_for :hero do
+  = render "/hero-page"
+
+.row
+  .section
+    %h2.title 徵求志工
+    .content.zh-tw
+      %p.construction
+        = render "/data/seek/volunteer.md"

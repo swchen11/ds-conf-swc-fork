@@ -1,0 +1,56 @@
+!!! 5
+%html{ :lang => "zh-TW" }
+
+  %head
+
+    %meta{ :charset => "utf-8" }
+    %title= data["site-title"]
+
+    = render "/partials/favicon"
+    = render "/partials/viewport"
+    = render "/partials/fb-og"
+
+    = render "/partials/site-css"
+    = render "/vender/html5shim"
+
+  %body
+    .page-wrap
+      .page
+        %nav.main-menu
+          %h2.title Main Navigation
+          %ul
+            %li.menu-item= link_to( "Home", "/" )
+            %li.menu-item= link_to( "最新消息", "/news/" )
+            %li.menu-item
+              %span 徵求貢獻
+              %ul
+                %li.menu-item= link_to( "徵求講者", "/seek/speaker.html" )
+                %li.menu-item= link_to( "徵求志工", "/seek/volunteer.html" )
+            %li.menu-item
+              %span 會議議程
+              %ul
+                %li.menu-item= link_to( "演講議程", "/agenda/" )
+                %li.menu-item= link_to( "資料分析上手課程", "/agenda/" )
+                %li.menu-item= link_to( "g0v 零時政府黑客松", "/agenda/" )
+            %li.menu-item
+              %span 活動參與
+              %ul
+                %li.menu-item= link_to( "線上報名", "/registration/signup.html" )
+                %li.menu-item= link_to( "交通資訊", "/registration/traffic.html" )
+                %li.menu-item= link_to( "會場資訊", "/registration/location.html" )
+            %li.menu-item= link_to( "工作委員", "/staff/" )
+        .main-content
+          .header
+            %a.menu-button
+              .line
+              .line
+              .line
+            %h1.title
+              = link_to "台灣資料科學愛好者年會", "/"
+          = yield :hero
+          = yield
+          = render "/footer"
+      = render "/vender/jquery-cdn"
+      = render "/partials/site-js"
+      = render "/vender/facebook.erb"
+      = livereload_js unless ENV["RACK_ENV"] == "production"
