@@ -2,8 +2,8 @@
   text-align: center;
   position: relative;
   display: inline-block;
-  line-height: $base-line-height * 2 - 4px;
-  // border: 1px solid $blue;
+  line-height: $base-line-height * 2 - 2px;
+  border: 1px solid $blue;
   padding: 0 $base-line-height / 2;
   margin: 0 auto;
   // @include link-colors($yellow, $white);

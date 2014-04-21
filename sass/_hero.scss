@@ -41,7 +41,7 @@
   }
   @include at-breakpoint($desktop) {
     display: block;
-    @include padding-leader(3);
+    @include padding-leader(2);
     @include padding-trailer(2);
     // height: 200px - 1px;
     // padding-top: 51px;

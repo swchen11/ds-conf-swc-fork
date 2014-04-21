@@ -3,7 +3,7 @@
   @include trailer(2);
   // background: rgba(black,.5);
   .title {
-    @include adjust-font-size-to(24px, 2);
+    @include adjust-font-size-to(20px, 2);
     text-align: center;
     // background: rgba($dark-blue, .3);
     // border-bottom: 1px solid $green;
