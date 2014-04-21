@@ -14,10 +14,12 @@ body {
 }
 .page-wrap {
   @include susy-grid-background;
+  min-height: 100%;
   @include at-breakpoint($ipad) {
     @include susy-grid-background;
   }
   @include at-breakpoint($desktop) {
     @include susy-grid-background;
+    margin: 0;
   }
 }

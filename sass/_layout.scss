@@ -13,7 +13,11 @@ $desktop: $desktop-break $desktop-columns;
 $container-style: magic;
 $container-width: false;
 
+html, body {
+  height: 100%;
+}
 .page {
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -33,13 +37,16 @@ $side   : $total-columns - $anchor;
   @include transition(margin .3s);
   @include span-columns($side);
   margin-left: -100%;
-  .show-menu & { margin-left: 0; }
+  .show-menu & {
+    overflow-y: scroll;
+    margin-left: 0;
+  }
 }
 
 .main-content {
   // background: image-url("bg-map.gif") no-repeat center top;
   min-height: 600px;
-  // @include transition(margin .3s);
+  @include transition(margin .3s);
   @include span-columns($total-columns omega);
   margin-right: 0;
   .show-menu & { margin-right: - ceil(space($side)); }
@@ -69,17 +76,19 @@ $side   : $total-columns - $anchor;
   $grid-padding: $gutter-width;
   .page {
     @include container;
-    max-width: 78em;
+    max-width: 96em;
   }
   .main-menu {
     @include transition(none);
     @include reset-columns;
+    @include span-columns($side);
     margin-left: 0;
   }
   .main-content {
     background: none;
     @include transition(none);
     @include reset-columns;
+    @include span-columns($desktop-columns - $side omega);
     margin-right: 0;
     .show-menu & { margin-right: 0; }
   }
@@ -94,7 +103,7 @@ $side   : $total-columns - $anchor;
 .topic {
   // background: rgba(black,.75);
   // border: 3px double $blue;
-  margin: -3px auto ($base-line-height - 3px);
+  margin: 0 auto $base-line-height;
   overflow: hidden;
   br {
     display: none;
@@ -103,7 +112,7 @@ $side   : $total-columns - $anchor;
     text-align: center;
   }
   hr {
-    margin-bottom: $base-line-height * 2 - 1px;
+    margin-bottom: $base-line-height * 2;
   }
   width: 80%;
   @include at-breakpoint($ipad) {
@@ -126,28 +135,22 @@ $side   : $total-columns - $anchor;
     @include padding-trailer(1);
   }
   .date {
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0;
-    @include adjust-font-size-to(22px, 1.5);
+    @include adjust-font-size-to(22px, 2);
     &.en {
       @include adjust-font-size-to(22px, 1.5);
-    }
-    @include at-breakpoint($ipad) {
-      text-align: center;
     }
   }
   .stage,
   .address {
-    text-align: left;
+    text-align: center;
     @include adjust-font-size-to(15px, 1);
     margin: 0;
     padding: 0;
     &.en {
       @include adjust-font-size-to(13px, 1);
-    }
-    @include at-breakpoint($ipad) {
-      text-align: center;
     }
   }
   .address {
